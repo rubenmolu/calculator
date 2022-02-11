@@ -10,7 +10,7 @@ import io.corp.calculator.TracerImpl;
 /**
  * Implementation Service IOperationService
  * 
- * @author Ruben Moral Lunar
+ * @author rubenmolu
  *
  */
 @Service

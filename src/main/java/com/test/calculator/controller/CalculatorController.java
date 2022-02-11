@@ -26,6 +26,14 @@ public class CalculatorController {
 		this.tracer = tracer;
 	}
 
+	/**
+	 * Rest Controller method used to obtain the result of a sum.
+	 * 
+	 * @param num1 Double
+	 * @param num2 Double
+	 * @return Double
+	 * @throws CalculatorException
+	 */
 	@GetMapping(Constant.OPERATIONSUM)
 	public ResponseEntity<ResultOperationDto> getSum(@RequestParam Double num1, @RequestParam Double num2) throws CalculatorException {
 		tracer.trace("INIT - method Rest getSum()");
@@ -34,6 +42,14 @@ public class CalculatorController {
 		return new ResponseEntity<>(responseSum, HttpStatus.OK);
 	}
 
+	/**
+	 * Rest Controller method used to obtain the result of a subtract.
+	 * 
+	 * @param num1 Double
+	 * @param num2 Double
+	 * @return Double
+	 * @throws CalculatorException
+	 */
 	@GetMapping(Constant.OPERATIONSUBTRACT)
 	public ResponseEntity<ResultOperationDto> getSubtract(@RequestParam Double num1, @RequestParam Double num2) throws CalculatorException {
 		tracer.trace("INIT: method Rest getSubtract()");

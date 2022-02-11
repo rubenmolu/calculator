@@ -6,7 +6,7 @@ import com.test.calculator.exception.CalculatorException;
  * 
  * Interface Service IoperationService
  * 
- * @author Ruben Moral Lunar
+ * @author rubenmolu
  *
  */
 public interface IOperationService {
