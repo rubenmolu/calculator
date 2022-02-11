@@ -1,4 +1,4 @@
-package com.test.calculator.controller;
+package com.test.calculator.exception;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
